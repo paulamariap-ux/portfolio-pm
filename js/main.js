@@ -5,6 +5,19 @@
     if (y) y.textContent = new Date().getFullYear();
   }
 
+  function setupNavAutoClose() {
+    const navContent = document.getElementById('navContent');
+    if (!navContent) return;
+
+    navContent.querySelectorAll('a.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (!navContent.classList.contains('show')) return;
+        const collapse = bootstrap.Collapse.getOrCreateInstance(navContent);
+        collapse.hide();
+      });
+    });
+  }
+
   function setupBeforeAfter() {
     document.querySelectorAll('.pm-ba').forEach(container => {
       const before = container.getAttribute('data-before');
@@ -151,7 +164,7 @@
 
   function setupScrollReveal() {
     const slideTargets = Array.from(document.querySelectorAll(
-      '.pm-section .pm-eyebrow, .pm-section .pm-h2, .pm-section .pm-sub, .pm-journey-step, .pm-timeline-item, .pm-skill, .pm-case, .pm-stat'
+      '.pm-section .pm-eyebrow, .pm-section .pm-h2, .pm-section .pm-sub, .pm-journey-step, .pm-timeline-item, .pm-case, .pm-stat'
     ));
     const fadeTargets = Array.from(document.querySelectorAll('.pm-card, .pm-course, .pm-case-card'));
 
@@ -172,7 +185,6 @@
 
     function reveal(el) {
       el.classList.add('is-visible');
-      if (el.classList.contains('pm-skill')) animateSkillFill(el);
     }
 
     if (reduceMotion || !('IntersectionObserver' in window)) {
@@ -190,13 +202,6 @@
     }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
     allTargets.forEach(el => observer.observe(el));
-  }
-
-  function animateSkillFill(skillEl) {
-    const fill = skillEl.querySelector('.pm-skill-fill');
-    if (!fill) return;
-    const level = fill.getAttribute('data-level') || '0';
-    requestAnimationFrame(() => { fill.style.width = level + '%'; });
   }
 
   function formatCount(n) {
@@ -247,6 +252,59 @@
     stats.forEach(el => observer.observe(el));
   }
 
+  function setupContactForm() {
+    const form = document.querySelector('.pm-form');
+    if (!form) return;
+
+    const status = document.createElement('p');
+    status.className = 'pm-form-status mt-3 mb-0';
+    status.setAttribute('role', 'status');
+    form.appendChild(status);
+
+    const messages = {
+      en: {
+        success: "Thanks! Your message was sent — I'll get back to you soon.",
+        error: 'Something went wrong. Please try again or email me directly at paulamariapirles@gmail.com.'
+      },
+      es: {
+        success: 'Gracias, tu mensaje fue enviado — te voy a responder pronto.',
+        error: 'Algo salió mal. Probá de nuevo o escribime directo a paulamariapirles@gmail.com.'
+      }
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const lang = document.documentElement.lang === 'es' ? 'es' : 'en';
+      const submitBtn = form.querySelector('button[type="submit"]');
+
+      status.textContent = '';
+      status.classList.remove('is-error', 'is-success');
+      submitBtn.disabled = true;
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (response.ok) {
+          form.reset();
+          status.textContent = messages[lang].success;
+          status.classList.add('is-success');
+        } else {
+          status.textContent = messages[lang].error;
+          status.classList.add('is-error');
+        }
+      } catch (err) {
+        status.textContent = messages[lang].error;
+        status.classList.add('is-error');
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
   function makePlaceholder(label) {
     const div = document.createElement('div');
     div.className = 'pm-ba-empty';
@@ -258,11 +316,13 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     setYear();
+    setupNavAutoClose();
     setupBeforeAfter();
     setupCaseMedia();
     setupCarouselHeight();
     setupBackToTop();
     setupScrollReveal();
     setupStatCounters();
+    setupContactForm();
   });
 })();

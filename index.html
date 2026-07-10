@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -34,15 +34,19 @@
       <div class="collapse navbar-collapse" id="navContent">
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#what" data-i18n="nav.what">What I do</a></li>
-          <li class="nav-item"><a class="nav-link" href="#timeline" data-i18n="nav.timeline">Timeline</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#what" data-i18n="nav.what">What I do</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey" data-i18n="nav.careerPath">Career Path</a></li>
           <!--<li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li> -->
           <li class="nav-item"><a class="nav-link" href="#courses" data-i18n="nav.courses">Courses</a></li>
           <li class="nav-item"><a class="nav-link" href="#testimonials" data-i18n="nav.testimonials">Testimonials</a>
           </li>
           <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
-          <li class="nav-item ms-lg-3">
+          <li class="nav-item d-flex align-items-center gap-2 mt-2 mt-lg-0 ms-lg-3">
+            <a class="btn btn-sm pm-cv-btn" href="https://www.linkedin.com/in/paulamariapirles" target="_blank" rel="noopener"
+              data-i18n-attr="aria-label" data-i18n="nav.cvAria" aria-label="Download CV">
+              <i class="fa-solid fa-file-arrow-down"></i> <span data-i18n="nav.cv">CV</span>
+            </a>
             <button class="btn btn-sm pm-lang-btn" id="langToggle" aria-label="Toggle language">
               <span id="langLabel">ES</span>
             </button>
@@ -69,7 +73,8 @@
               From kitchen to storefront — idea, launch, and well beyond.
             </p> -->
             <p class="lead mt-4" data-i18n="hero.lead">
-              After 15+ years operating food businesses, I transitioned into Product Management to solve the same problems through technology. Today I combine domain expertise, user research, and experimentation to build products that drive growth and create value for both customers and the business.
+             I founded and operated my own food business for over 10 years—building product lines, managing business units, and running active kitchens. Today, I bring that founder's mindset to building digital products.
+
             </p>
             <div class="mt-4 d-flex gap-3 flex-wrap">
               <a href="#projects" class="btn pm-btn-primary" data-i18n="hero.ctaPrimary">See my work</a>
@@ -129,333 +134,6 @@
       </div>
     </section>
 
-    <!-- ============ WHAT I DO / USE / EXPECT ============ -->
-    <section id="what" class="pm-section pm-section-alt">
-      <div class="container">
-        <p class="pm-eyebrow" data-i18n="what.eyebrow">How I work</p>
-        <h2 class="pm-h2" data-i18n="what.title">What I do, what I use, what you can expect.</h2>
-
-        <div class="row mt-5 g-4">
-          <div class="col-md-4">
-            <div class="pm-card h-100">
-              <div class="pm-card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-              <h3 class="pm-h3" data-i18n="what.doTitle">What I do</h3>
-              <ul class="pm-list">
-                <li data-i18n="what.do1">Product vision & strategy</li>
-                <li data-i18n="what.do2">Roadmap & prioritization</li>
-                <li data-i18n="what.do3">Stakeholder management</li>
-                <li data-i18n="what.do4">Metrics & KPI definition</li>
-                <li data-i18n="what.do5">Experimentation (A/B, dif in dif, pre-post, scarcity, LTOs)</li>
-                <li data-i18n="what.do6">Cross-functional delivery</li>
-                <li data-i18n="what.do7">Launch & go-to-market</li>
-                <li data-i18n="what.do8">Menu & product merchandising</li>
-                <li data-i18n="what.do9">Live Ops (e-commerce)</li>
-                <li data-i18n="what.do10">Food-tech domain expertise</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="pm-card h-100">
-              <div class="pm-card-icon"><i class="fa-solid fa-bars-progress"></i></div>
-              <h3 class="pm-h3" data-i18n="what.useTitle">Skills</h3>
-
-              <ul class="pm-list">
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.pm">Project Management</span><span class="pm-skill-level">95%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="95"></div></div>
-                </li>
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.foodData">Food data & recipe engineering</span><span class="pm-skill-level">95%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="95"></div></div>
-                </li>
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.commLead">Communication &amp; leadership</span><span class="pm-skill-level">90%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="90"></div></div>
-                </li>
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.commercial">Commercial acumen &amp; unit economics</span><span class="pm-skill-level">90%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="90"></div></div>
-                </li>
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.agile">Agile methodologies</span><span class="pm-skill-level">90%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="90"></div></div>
-                </li>
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.english">English</span><span class="pm-skill-level">90%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="90"></div></div>
-                </li>
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.data">Data analytics</span><span class="pm-skill-level">80%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="80"></div></div>
-                </li>
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.ai">AI prototyping &amp; agents</span><span class="pm-skill-level">80%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="80"></div></div>
-                </li>
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.ux">UX/UI Design</span><span class="pm-skill-level">75%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="75"></div></div>
-                </li>
-                <li class="pm-skill">
-                  <div class="pm-skill-head"><span data-i18n="skill.web">HTML, CSS &amp; JavaScript</span><span class="pm-skill-level">75%</span></div>
-                  <div class="pm-skill-bar"><div class="pm-skill-fill" data-level="75"></div></div>
-                </li>
-              </ul>
-
-              <p class="mt-3 mb-1 fw-semibold" data-i18n="what.toolsTitle">Tools</p>
-              <ul class="pm-list pm-list-pills">
-                <li>Claude</li>
-                <li>V0</li>
-                <li>Figma</li>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Notion</li>
-                <li>Jira</li>
-                <li>Monday</li>
-                <li>Slack</li>
-                <li>Google Suite</li>
-                <li>Hex</li>
-                <li>Mixpanel</li>
-                <li>Tableau</li>
-                <li>SQL</li>
-                <li>GitHub</li>
-                <li>VS Code</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="pm-card h-100">
-              <div class="pm-card-icon"><i class="fa-solid fa-bullseye"></i></div>
-              <h3 class="pm-h3" data-i18n="what.expectTitle">What you can expect</h3>
-              <ul class="pm-list">
-                <li data-i18n="what.exp1">Founder mindset on every initiative</li>
-                <li data-i18n="what.exp2">Calm under operational chaos</li>
-                <li data-i18n="what.exp3">Bridge between technical and non-technical voices</li>
-                <li data-i18n="what.exp4">Data-driven decisions</li>
-                <li data-i18n="what.exp5">Crisp problem framing before solutions</li>
-                <li data-i18n="what.exp6">Tight feedback loops with eng & design</li>
-                <li data-i18n="what.exp7">Domain depth in operations, food and nutrition</li>
-                <li data-i18n="what.exp8">Bilingual, cross-cultural collaboration</li>
-              </ul>
-              <div class="pm-card-illustration">
-                <img src="assets/images/illustration-app.png" class="img-fluid" alt="" aria-hidden="true">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ MY JOURNEY ============ -->
-    <section id="journey" class="pm-section pm-section-alt">
-      <div class="container">
-        <p class="pm-eyebrow" data-i18n="journey.eyebrow">Career path</p>
-        <h2 class="pm-h2" data-i18n="journey.title">My Journey</h2>
-
-        <div class="pm-journey mt-5">
-          <div class="pm-journey-step">
-            <div class="pm-journey-icon" aria-hidden="true">🏨</div>
-            <div class="pm-journey-body">
-              <h3 class="pm-journey-title" data-i18n="journey.s1.title">Hotel Operations</h3>
-              <p class="pm-journey-desc" data-i18n="journey.s1.desc">Learned how to run complex food operations at scale.</p>
-            </div>
-          </div>
-          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
-
-          <div class="pm-journey-step">
-            <div class="pm-journey-icon" aria-hidden="true">🍽️</div>
-            <div class="pm-journey-body">
-              <h3 class="pm-journey-title" data-i18n="journey.s2.title">Food Business Founder</h3>
-              <p class="pm-journey-desc" data-i18n="journey.s2.desc">Built and scaled a multi-unit food business from the ground up.</p>
-            </div>
-          </div>
-          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
-
-          <div class="pm-journey-step">
-            <div class="pm-journey-icon" aria-hidden="true">🌍</div>
-            <div class="pm-journey-body">
-              <h3 class="pm-journey-title" data-i18n="journey.s3.title">Consultant</h3>
-              <p class="pm-journey-desc" data-i18n="journey.s3.desc">Helped 100+ founders solve food operations and product challenges.</p>
-            </div>
-          </div>
-          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
-
-          <div class="pm-journey-step">
-            <div class="pm-journey-icon" aria-hidden="true">💻</div>
-            <div class="pm-journey-body">
-              <h3 class="pm-journey-title" data-i18n="journey.s4.title">MealIQ</h3>
-              <p class="pm-journey-desc" data-i18n="journey.s4.desc">Translated deep nutrition expertise into product development.</p>
-            </div>
-          </div>
-          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
-
-          <div class="pm-journey-step">
-            <div class="pm-journey-icon" aria-hidden="true">👨‍🍳</div>
-            <div class="pm-journey-body">
-              <h3 class="pm-journey-title" data-i18n="journey.s5.title">CookUnity Culinary</h3>
-              <p class="pm-journey-desc" data-i18n="journey.s5.desc">Scaled digital food operations and chef onboarding.</p>
-            </div>
-          </div>
-          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
-
-          <div class="pm-journey-step">
-            <div class="pm-journey-icon" aria-hidden="true">🚀</div>
-            <div class="pm-journey-body">
-              <h3 class="pm-journey-title" data-i18n="journey.s6.title">CookUnity Product</h3>
-              <p class="pm-journey-desc" data-i18n="journey.s6.desc">Now building product experiences that improve discovery, adoption, and growth.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ TIMELINE ============ -->
-    <section id="timeline" class="pm-section">
-      <div class="container">
-        <p class="pm-eyebrow" data-i18n="timeline.eyebrow">Timeline</p>
-        <h2 class="pm-h2" data-i18n="timeline.title">My path through products.</h2>
-        <p class="pm-sub" data-i18n="timeline.sub">
-          For each milestone: the challenge, my role, and the result.
-        </p>
-
-        <ol class="pm-timeline mt-5">
-          <li class="pm-timeline-item">
-            <div class="pm-timeline-marker"></div>
-            <div class="pm-timeline-content">
-              <span class="pm-timeline-date" data-i18n="timeline.t1.date">2024 – Present</span>
-              <h3 class="pm-timeline-title" data-i18n="timeline.t1.title">CookUnity — Product Marketing Associate & Menu Merchandiser</h3>
-              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
-                <span data-i18n="timeline.t1.challenge">Increase meal discovery to drive product adoption, engagement, and long-term retention.</span>
-              </p>
-              <p><strong data-i18n="timeline.label.role">Role:</strong>
-                <span data-i18n="timeline.t1.role">Owned the discovery experience across homepage merchandising, product collections, labels, product lines, and GTM launches, partnering with Product, Design, CRM, Supply, and Chef teams.</span>
-              </p>
-              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
-              <ul class="pm-timeline-results">
-                <li data-i18n="timeline.t1.result1">Increased SKU Expansion exposure 14.65% → 16.1%</li>
-                <li data-i18n="timeline.t1.result2">Contributed to adoption growth 25.7% → 34.1%</li>
-                <li data-i18n="timeline.t1.result3">Launched the Protein Label, increasing labeled meal orders 13.2% and incremental AOV 2.7%</li>
-                <li data-i18n="timeline.t1.result4">Scaled personalized merchandising to 45K weekly active users</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="pm-timeline-item">
-            <div class="pm-timeline-marker"></div>
-            <div class="pm-timeline-content">
-              <span class="pm-timeline-date" data-i18n="timeline.t3.date">2020 – 2022</span>
-              <h3 class="pm-timeline-title" data-i18n="timeline.t3.title">CookUnity — Culinary Specialist</h3>
-              <p><strong data-i18n="timeline.label.role">Role:</strong>
-                <span data-i18n="timeline.t3.role">Owned the operational lifecycle of new meal launches, partnering with chefs to scale recipe quality, nutritional accuracy, and catalog operations.</span>
-              </p>
-              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
-              <ul class="pm-timeline-results">
-                <li data-i18n="timeline.t3.result1">Launched 1,000+ meals</li>
-                <li data-i18n="timeline.t3.result2">Standardized recipe architecture and nutritional data</li>
-                <li data-i18n="timeline.t3.result3">Built deep operational knowledge of CookUnity's marketplace and chef ecosystem</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="pm-timeline-item">
-            <div class="pm-timeline-marker"></div>
-            <div class="pm-timeline-content">
-              <span class="pm-timeline-date" data-i18n="timeline.t2.date">2020 – 2022</span>
-              <h3 class="pm-timeline-title" data-i18n="timeline.t2.title">MealIQ — Product Manager</h3>
-              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
-                <span data-i18n="timeline.t2.challenge">Transform an early-stage nutrition platform with critical domain gaps into a reliable white-label product for enterprise clients.</span>
-              </p>
-              <p><strong data-i18n="timeline.label.role">Role:</strong>
-                <span data-i18n="timeline.t2.role">Partnered with the CEO and engineers as the nutrition domain expert, translating complex nutrition requirements into product decisions and leading the evolution of the platform's core capabilities.</span>
-              </p>
-              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
-              <ul class="pm-timeline-results">
-                <li data-i18n="timeline.t2.result1">Built an ingredient ontology with 2,000+ mapped ingredients</li>
-                <li data-i18n="timeline.t2.result2">Managed a catalog of 500+ recipes</li>
-                <li data-i18n="timeline.t2.result3">Built and led a team of 3 nutritionists</li>
-                <li data-i18n="timeline.t2.result4">Supported the platform launch and Kroger Supermarkets integration</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="pm-timeline-item">
-            <div class="pm-timeline-marker"></div>
-            <div class="pm-timeline-content">
-              <span class="pm-timeline-date" data-i18n="timeline.t4.date">2020 – Present</span>
-              <h3 class="pm-timeline-title" data-i18n="timeline.t4.title">FoodTech & Hospitality Consultant</h3>
-              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
-                <span data-i18n="timeline.t4.challenge">Help founders and food businesses transform operational expertise into scalable products and processes.</span>
-              </p>
-              <p><strong data-i18n="timeline.label.role">Role:</strong>
-                <span data-i18n="timeline.t4.role">Advised startups and entrepreneurs on menu engineering, nutrition systems, compliance, food operations, recipe management, and product strategy.</span>
-              </p>
-              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
-              <ul class="pm-timeline-results">
-                <li data-i18n="timeline.t4.result1">Consulted 100+ startups and founders</li>
-                <li data-i18n="timeline.t4.result2">Achieved Top Rated Plus on Upwork</li>
-                <li data-i18n="timeline.t4.result3">Worked across multiple FoodTech business models and markets</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="pm-timeline-item">
-            <div class="pm-timeline-marker"></div>
-            <div class="pm-timeline-content">
-              <span class="pm-timeline-date" data-i18n="timeline.t5.date">2010 – 2020</span>
-              <h3 class="pm-timeline-title" data-i18n="timeline.t5.title">Delight Bariloche — Founder & Food Business Owner</h3>
-              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
-                <span data-i18n="timeline.t5.challenge">Build and scale a profitable multi-channel food business while balancing customer experience, operational excellence, and financial sustainability.</span>
-              </p>
-              <p><strong data-i18n="timeline.label.role">Role:</strong>
-                <span data-i18n="timeline.t5.role">Led every aspect of the business, including operations, procurement, menu engineering, product development, food safety, hiring, and growth strategy.</span>
-              </p>
-              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
-              <ul class="pm-timeline-results">
-                <li data-i18n="timeline.t5.result1">Served 1,000+ customers daily</li>
-                <li data-i18n="timeline.t5.result2">Scaled the business across 3 business units</li>
-                <li data-i18n="timeline.t5.result3">Achieved 15% annual growth</li>
-                <li data-i18n="timeline.t5.result4">Expanded into meal prep, catering, retail distribution, and institutional food service</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="pm-timeline-item">
-            <div class="pm-timeline-marker"></div>
-            <div class="pm-timeline-content">
-              <span class="pm-timeline-date" data-i18n="timeline.t6.date">2004 – 2009</span>
-              <h3 class="pm-timeline-title" data-i18n="timeline.t6.title">Hospitality Industry — Hotel Operations Manager</h3>
-              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
-                <span data-i18n="timeline.t6.challenge">Improve operational efficiency and food service quality at scale.</span>
-              </p>
-              <p><strong data-i18n="timeline.label.role">Role:</strong>
-                <span data-i18n="timeline.t6.role">Managed food service operations for a 600-guest hotel, overseeing production, cost control, quality systems, and process optimization.</span>
-              </p>
-              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
-              <ul class="pm-timeline-results">
-                <li data-i18n="timeline.t6.result1">Reduced food costs by 20%</li>
-                <li data-i18n="timeline.t6.result2">Implemented GMP and achieved ISO 9001 certification</li>
-                <li data-i18n="timeline.t6.result3">Led large-scale hospitality operations</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="pm-timeline-item pm-timeline-end" aria-hidden="true">
-            <svg class="pm-timeline-strawberry" width="26" height="30" viewBox="0 0 32 34">
-              <path d="M5 11C5 7 8 4 12 4.5 13 3 15 2 16 2s3 1 4 2.5C24 4 27 7 27 11c0 9-6 21-11 21S5 20 5 11z"></path>
-              <circle cx="12" cy="12" r="1.1"></circle>
-              <circle cx="20" cy="12" r="1.1"></circle>
-              <circle cx="9" cy="17" r="1.1"></circle>
-              <circle cx="16" cy="18" r="1.1"></circle>
-              <circle cx="23" cy="17" r="1.1"></circle>
-              <circle cx="12" cy="23" r="1.1"></circle>
-              <circle cx="20" cy="23" r="1.1"></circle>
-              <circle cx="16" cy="28" r="1"></circle>
-            </svg>
-          </li>
-        </ol>
-      </div>
-    </section>
-
     <!-- ============ CASE STUDIES / PROJECTS ============ -->
     <section id="projects" class="pm-section pm-section-alt">
       <div class="container">
@@ -494,8 +172,8 @@
           <div class="col-md-6 col-lg-4">
             <div class="pm-case-card">
               <div>
-                <span class="pm-tag" data-i18n="case.recipeCalc.tag">Recipe Cost Calculator · Founder</span>
-                <span class="pm-stage-tag" data-i18n="case.stage.enterpriseProduct">💻 Enterprise Product</span>
+                <span class="pm-tag" data-i18n="case.recipeCalc.tag">Consultant Freelancer</span>
+                <span class="pm-stage-tag" data-i18n="case.stage.enterpriseProduct">💻 SaaS</span>
               </div>
               <h3 class="pm-h3" data-i18n="case.recipeCalc.title">Recipe Cost Calculator</h3>
               <button type="button" class="btn pm-btn-ghost pm-case-card-btn" data-bs-toggle="modal" data-bs-target="#modal-case-recipe-calc" data-i18n="projects.viewMore">See more</button>
@@ -993,8 +671,311 @@
       </div>
     </section>
 
+    <!-- ============ WHAT I DO / USE / EXPECT ============ -->
+    <section id="what" class="pm-section">
+      <div class="container">
+        <p class="pm-eyebrow" data-i18n="what.eyebrow">How I work</p>
+        <h2 class="pm-h2" data-i18n="what.title">What I do, what I use, what you can expect.</h2>
+
+        <div class="row mt-5 g-4">
+          <div class="col-md-4">
+            <div class="pm-card h-100">
+              <div class="pm-card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+              <h3 class="pm-h3" data-i18n="what.doTitle">What I do</h3>
+              <ul class="pm-list">
+                <li data-i18n="what.do1">Product vision & strategy</li>
+                <li data-i18n="what.do2">Roadmap & prioritization</li>
+                <li data-i18n="what.do3">Stakeholder management</li>
+                <li data-i18n="what.do4">Metrics & KPI definition</li>
+                <li data-i18n="what.do5">Experimentation (A/B, dif in dif, pre-post, scarcity, LTOs)</li>
+                <li data-i18n="what.do6">Cross-functional delivery</li>
+                <li data-i18n="what.do7">Launch & go-to-market</li>
+                <li data-i18n="what.do8">Menu & product merchandising</li>
+                <li data-i18n="what.do9">Live Ops (e-commerce)</li>
+                <li data-i18n="what.do10">Food-tech domain expertise</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pm-card h-100">
+              <div class="pm-card-icon"><i class="fa-solid fa-bars-progress"></i></div>
+              <h3 class="pm-h3" data-i18n="what.useTitle">Skills</h3>
+
+              <p class="mt-3 mb-1 fw-semibold" data-i18n="skills.coreTitle">Core skills</p>
+              <ul class="pm-list">
+                <li data-i18n="skill.pm">Project Management</li>
+                <li data-i18n="skill.foodData">Food data & recipe engineering</li>
+                <li data-i18n="skill.commLead">Communication &amp; leadership</li>
+                <li data-i18n="skill.commercial">Commercial acumen</li>
+                <li data-i18n="skill.agile">Agile methodologies</li>
+                <li data-i18n="skill.english">English</li>
+              </ul>
+
+              <p class="mt-3 mb-1 fw-semibold" data-i18n="skills.workingTitle">Working knowledge</p>
+              <ul class="pm-list">
+                <li data-i18n="skill.data">Data analytics</li>
+                <li data-i18n="skill.ai">AI prototyping &amp; agents</li>
+                <li data-i18n="skill.ux">UX/UI Design</li>
+                <li data-i18n="skill.web">HTML, CSS &amp; JavaScript</li>
+              </ul>
+
+              <p class="mt-3 mb-1 fw-semibold" data-i18n="what.toolsTitle">Tools</p>
+              <ul class="pm-list pm-list-pills">
+                <li>Claude</li>
+                <li>V0</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Notion</li>
+                <li>Jira</li>
+                <li>Monday</li>
+                <li>Slack</li>
+                <li>Google Suite</li>
+                <li>Hex</li>
+                <li>Mixpanel</li>
+                <li>Tableau</li>
+                <li>SQL</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pm-card h-100">
+              <div class="pm-card-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <h3 class="pm-h3" data-i18n="what.expectTitle">What you can expect</h3>
+              <ul class="pm-list">
+                <li data-i18n="what.exp1">Founder mindset on every initiative</li>
+                <li data-i18n="what.exp2">Calm under operational chaos</li>
+                <li data-i18n="what.exp3">Bridge between technical and non-technical voices</li>
+                <li data-i18n="what.exp4">Data-driven decisions</li>
+                <li data-i18n="what.exp5">Crisp problem framing before solutions</li>
+                <li data-i18n="what.exp6">Tight feedback loops with eng & design</li>
+                <li data-i18n="what.exp7">Domain depth in operations, food and nutrition</li>
+                <li data-i18n="what.exp8">Bilingual, cross-cultural collaboration</li>
+              </ul>
+              <div class="pm-card-illustration">
+                <img src="assets/images/illustration-app.png" class="img-fluid" alt="" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MY JOURNEY ============ -->
+    <section id="journey" class="pm-section pm-section-alt">
+      <div class="container">
+        <p class="pm-eyebrow" data-i18n="journey.eyebrow">Career path</p>
+        <h2 class="pm-h2" data-i18n="journey.title">My Journey</h2>
+
+        <div class="pm-journey mt-5">
+          <div class="pm-journey-step">
+            <div class="pm-journey-icon" aria-hidden="true">🏨</div>
+            <div class="pm-journey-body">
+              <h3 class="pm-journey-title" data-i18n="journey.s1.title">Hotel Operations</h3>
+              <p class="pm-journey-desc" data-i18n="journey.s1.desc">Learned how to run complex food operations at scale.</p>
+            </div>
+          </div>
+          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
+
+          <div class="pm-journey-step">
+            <div class="pm-journey-icon" aria-hidden="true">🍽️</div>
+            <div class="pm-journey-body">
+              <h3 class="pm-journey-title" data-i18n="journey.s2.title">Food Business Founder</h3>
+              <p class="pm-journey-desc" data-i18n="journey.s2.desc">Built and scaled a multi-unit food business from the ground up.</p>
+            </div>
+          </div>
+          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
+
+          <div class="pm-journey-step">
+            <div class="pm-journey-icon" aria-hidden="true">🌍</div>
+            <div class="pm-journey-body">
+              <h3 class="pm-journey-title" data-i18n="journey.s3.title">Consultant</h3>
+              <p class="pm-journey-desc" data-i18n="journey.s3.desc">Helped 100+ founders solve food operations and product challenges.</p>
+            </div>
+          </div>
+          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
+
+          <div class="pm-journey-step">
+            <div class="pm-journey-icon" aria-hidden="true">💻</div>
+            <div class="pm-journey-body">
+              <h3 class="pm-journey-title" data-i18n="journey.s4.title">MealIQ</h3>
+              <p class="pm-journey-desc" data-i18n="journey.s4.desc">Translated deep nutrition expertise into product development.</p>
+            </div>
+          </div>
+          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
+
+          <div class="pm-journey-step">
+            <div class="pm-journey-icon" aria-hidden="true">👨‍🍳</div>
+            <div class="pm-journey-body">
+              <h3 class="pm-journey-title" data-i18n="journey.s5.title">CookUnity Culinary</h3>
+              <p class="pm-journey-desc" data-i18n="journey.s5.desc">Scaled digital food operations and chef onboarding.</p>
+            </div>
+          </div>
+          <div class="pm-journey-arrow" aria-hidden="true">↓</div>
+
+          <div class="pm-journey-step">
+            <div class="pm-journey-icon" aria-hidden="true">🚀</div>
+            <div class="pm-journey-body">
+              <h3 class="pm-journey-title" data-i18n="journey.s6.title">CookUnity Product</h3>
+              <p class="pm-journey-desc" data-i18n="journey.s6.desc">Now building product experiences that improve discovery, adoption, and growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ 
+    <section id="timeline" class="pm-section">
+      <div class="container">
+        <p class="pm-eyebrow" data-i18n="timeline.eyebrow">Timeline</p>
+        <h2 class="pm-h2" data-i18n="timeline.title">My path through products.</h2>
+        <p class="pm-sub" data-i18n="timeline.sub">
+          For each milestone: the challenge, my role, and the result.
+        </p>
+
+        <ol class="pm-timeline mt-5">
+          <li class="pm-timeline-item">
+            <div class="pm-timeline-marker"></div>
+            <div class="pm-timeline-content">
+              <span class="pm-timeline-date" data-i18n="timeline.t1.date">2024 – Present</span>
+              <h3 class="pm-timeline-title" data-i18n="timeline.t1.title">CookUnity — Product Associate, Menu Merchandiser</h3>
+              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
+                <span data-i18n="timeline.t1.challenge">Increase meal discovery to drive product adoption, engagement, and long-term retention.</span>
+              </p>
+              <p><strong data-i18n="timeline.label.role">Role:</strong>
+                <span data-i18n="timeline.t1.role">Owned the discovery experience across homepage merchandising, product collections, labels, product lines, and GTM launches, partnering with Product, Design, CRM, Supply, and Chef teams.</span>
+              </p>
+              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
+              <ul class="pm-timeline-results">
+                <li data-i18n="timeline.t1.result1">Increased SKU Expansion exposure 14.65% → 16.1%</li>
+                <li data-i18n="timeline.t1.result2">Contributed to adoption growth 25.7% → 34.1%</li>
+                <li data-i18n="timeline.t1.result3">Launched the Protein Label, increasing labeled meal orders 13.2% and incremental AOV 2.7%</li>
+                <li data-i18n="timeline.t1.result4">Scaled personalized merchandising to 45K weekly active users</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="pm-timeline-item">
+            <div class="pm-timeline-marker"></div>
+            <div class="pm-timeline-content">
+              <span class="pm-timeline-date" data-i18n="timeline.t3.date">2020 – 2022</span>
+              <h3 class="pm-timeline-title" data-i18n="timeline.t3.title">CookUnity — Culinary Specialist</h3>
+              <p><strong data-i18n="timeline.label.role">Role:</strong>
+                <span data-i18n="timeline.t3.role">Owned the operational lifecycle of new meal launches, partnering with chefs to scale recipe quality, nutritional accuracy, and catalog operations.</span>
+              </p>
+              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
+              <ul class="pm-timeline-results">
+                <li data-i18n="timeline.t3.result1">Launched 1,000+ meals</li>
+                <li data-i18n="timeline.t3.result2">Standardized recipe architecture and nutritional data</li>
+                <li data-i18n="timeline.t3.result3">Built deep operational knowledge of CookUnity's marketplace and chef ecosystem</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="pm-timeline-item">
+            <div class="pm-timeline-marker"></div>
+            <div class="pm-timeline-content">
+              <span class="pm-timeline-date" data-i18n="timeline.t2.date">2020 – 2022</span>
+              <h3 class="pm-timeline-title" data-i18n="timeline.t2.title">MealIQ — Product Manager</h3>
+              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
+                <span data-i18n="timeline.t2.challenge">Transform an early-stage nutrition platform with critical domain gaps into a reliable white-label product for enterprise clients.</span>
+              </p>
+              <p><strong data-i18n="timeline.label.role">Role:</strong>
+                <span data-i18n="timeline.t2.role">Partnered with the CEO and engineers as the nutrition domain expert, translating complex nutrition requirements into product decisions and leading the evolution of the platform's core capabilities.</span>
+              </p>
+              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
+              <ul class="pm-timeline-results">
+                <li data-i18n="timeline.t2.result1">Built an ingredient ontology with 2,000+ mapped ingredients</li>
+                <li data-i18n="timeline.t2.result2">Managed a catalog of 500+ recipes</li>
+                <li data-i18n="timeline.t2.result3">Built and led a team of 3 nutritionists</li>
+                <li data-i18n="timeline.t2.result4">Supported the platform launch and Kroger Supermarkets integration</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="pm-timeline-item">
+            <div class="pm-timeline-marker"></div>
+            <div class="pm-timeline-content">
+              <span class="pm-timeline-date" data-i18n="timeline.t4.date">2020 – Present</span>
+              <h3 class="pm-timeline-title" data-i18n="timeline.t4.title">FoodTech & Hospitality Consultant</h3>
+              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
+                <span data-i18n="timeline.t4.challenge">Help founders and food businesses transform operational expertise into scalable products and processes.</span>
+              </p>
+              <p><strong data-i18n="timeline.label.role">Role:</strong>
+                <span data-i18n="timeline.t4.role">Advised startups and entrepreneurs on menu engineering, nutrition systems, compliance, food operations, recipe management, and product strategy.</span>
+              </p>
+              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
+              <ul class="pm-timeline-results">
+                <li data-i18n="timeline.t4.result1">Consulted 100+ startups and founders</li>
+                <li data-i18n="timeline.t4.result2">Achieved Top Rated Plus on Upwork</li>
+                <li data-i18n="timeline.t4.result3">Worked across multiple FoodTech business models and markets</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="pm-timeline-item">
+            <div class="pm-timeline-marker"></div>
+            <div class="pm-timeline-content">
+              <span class="pm-timeline-date" data-i18n="timeline.t5.date">2010 – 2020</span>
+              <h3 class="pm-timeline-title" data-i18n="timeline.t5.title">Delight Bariloche — Founder & Food Business Owner</h3>
+              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
+                <span data-i18n="timeline.t5.challenge">Build and scale a profitable multi-channel food business while balancing customer experience, operational excellence, and financial sustainability.</span>
+              </p>
+              <p><strong data-i18n="timeline.label.role">Role:</strong>
+                <span data-i18n="timeline.t5.role">Led every aspect of the business, including operations, procurement, menu engineering, product development, food safety, hiring, and growth strategy.</span>
+              </p>
+              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
+              <ul class="pm-timeline-results">
+                <li data-i18n="timeline.t5.result1">Served 1,000+ customers daily</li>
+                <li data-i18n="timeline.t5.result2">Scaled the business across 3 business units</li>
+                <li data-i18n="timeline.t5.result3">Achieved 15% annual growth</li>
+                <li data-i18n="timeline.t5.result4">Expanded into meal prep, catering, retail distribution, and institutional food service</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="pm-timeline-item">
+            <div class="pm-timeline-marker"></div>
+            <div class="pm-timeline-content">
+              <span class="pm-timeline-date" data-i18n="timeline.t6.date">2004 – 2009</span>
+              <h3 class="pm-timeline-title" data-i18n="timeline.t6.title">Hospitality Industry — Hotel Operations Manager</h3>
+              <p><strong data-i18n="timeline.label.challenge">Challenge:</strong>
+                <span data-i18n="timeline.t6.challenge">Improve operational efficiency and food service quality at scale.</span>
+              </p>
+              <p><strong data-i18n="timeline.label.role">Role:</strong>
+                <span data-i18n="timeline.t6.role">Managed food service operations for a 600-guest hotel, overseeing production, cost control, quality systems, and process optimization.</span>
+              </p>
+              <p class="mb-1"><strong data-i18n="timeline.label.keyWins">Key Wins:</strong></p>
+              <ul class="pm-timeline-results">
+                <li data-i18n="timeline.t6.result1">Reduced food costs by 20%</li>
+                <li data-i18n="timeline.t6.result2">Implemented GMP and achieved ISO 9001 certification</li>
+                <li data-i18n="timeline.t6.result3">Led large-scale hospitality operations</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="pm-timeline-item pm-timeline-end" aria-hidden="true">
+            <svg class="pm-timeline-strawberry" width="26" height="30" viewBox="0 0 32 34">
+              <path d="M5 11C5 7 8 4 12 4.5 13 3 15 2 16 2s3 1 4 2.5C24 4 27 7 27 11c0 9-6 21-11 21S5 20 5 11z"></path>
+              <circle cx="12" cy="12" r="1.1"></circle>
+              <circle cx="20" cy="12" r="1.1"></circle>
+              <circle cx="9" cy="17" r="1.1"></circle>
+              <circle cx="16" cy="18" r="1.1"></circle>
+              <circle cx="23" cy="17" r="1.1"></circle>
+              <circle cx="12" cy="23" r="1.1"></circle>
+              <circle cx="20" cy="23" r="1.1"></circle>
+              <circle cx="16" cy="28" r="1"></circle>
+            </svg>
+          </li>
+        </ol>
+      </div>
+    </section>-->
+
+
     <!-- ============ COURSES ============ -->
-    <section id="courses" class="pm-section pm-section-alt">
+    <section id="courses" class="pm-section">
       <div class="container">
         <p class="pm-eyebrow" data-i18n="courses.eyebrow">Education & courses</p>
         <h2 class="pm-h2" data-i18n="courses.title">Always learning.</h2>
@@ -1040,14 +1021,14 @@
               <p class="pm-course-year" data-i18n="courses.c2.year">Completed</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <!-- <div class="col-md-6 col-lg-4">
             <div class="pm-course">
               <div class="pm-course-logo"><i class="fa-solid fa-kitchen-set"></i></div>
               <h3 class="pm-course-title" data-i18n="courses.c3.title">Culinary Arts — basic course</h3>
               <p class="pm-course-org" data-i18n="courses.c3.org">Escuela de Gastronomía Celia</p>
               <p class="pm-course-year" data-i18n="courses.c3.year">Completed</p>
             </div>
-          </div>
+          </div>-->
           <div class="col-md-6 col-lg-4">
             <div class="pm-course">
               <div class="pm-course-logo"><i class="fa-solid fa-comments"></i></div>
@@ -1151,26 +1132,28 @@
               For PM roles, consulting or just a hello — drop me a message.
             </p>
           </div>
-          <div class="col-lg-4 text-center d-none d-lg-block">
+          <div class="col-lg-4 text-center pm-contact-illustration-col">
             <img src="assets/images/illustration-connect.png" class="img-fluid pm-contact-illustration" alt="" aria-hidden="true">
           </div>
         </div>
 
-        <form action="#" method="post" class="pm-form mt-5">
+        <form action="https://formspree.io/f/mnjkerek" method="POST" class="pm-form mt-5">
+          <input type="hidden" name="_subject" value="New message from the portfolio contact form">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <div class="row g-4">
             <div class="col-md-6">
               <label for="name" class="form-label" data-i18n="contact.name">Name</label>
-              <input type="text" id="name" name="name" class="form-control"
+              <input type="text" id="name" name="name" class="form-control" required
                 data-i18n-attr="placeholder" data-i18n="contact.namePh" placeholder="Your full name">
             </div>
             <div class="col-md-6">
               <label for="email" class="form-label" data-i18n="contact.email">Email</label>
-              <input type="email" id="email" name="email" class="form-control"
+              <input type="email" id="email" name="email" class="form-control" required
                 data-i18n-attr="placeholder" data-i18n="contact.emailPh" placeholder="you@email.com">
             </div>
             <div class="col-12">
               <label for="msg" class="form-label" data-i18n="contact.msg">Message</label>
-              <textarea id="msg" name="msg" rows="5" class="form-control"
+              <textarea id="msg" name="msg" rows="5" class="form-control" required
                 data-i18n-attr="placeholder" data-i18n="contact.msgPh"
                 placeholder="Tell me a bit about the role or project..."></textarea>
             </div>
@@ -1195,7 +1178,7 @@
   <footer class="pm-footer">
     <div class="container text-center">
       <p class="mb-1">© <span id="year"></span> Paula Pirles</p>
-      <p class="pm-footer-sub" data-i18n="footer.sub">Built with care · HTML, CSS &amp; a bit of JS.</p>
+      <p class="pm-footer-sub" data-i18n="footer.sub">Built with care · HTML, CSS, a bit of JS &amp; Claude Code.</p>
     </div>
   </footer>
 

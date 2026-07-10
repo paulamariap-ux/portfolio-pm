@@ -1,20 +1,19 @@
 /* ============ Tokens — Paula's Tp2 brand system ============ */
 :root {
   --pm-bg: #ffffff;
-  --pm-bg-alt: #f4f4f6;          /* white smoke */
-  --pm-ink: #210d42;             /* aubergine */
-  --pm-ink-soft: #4a3a6b;
-  --pm-muted: #8a82a0;
-  --pm-line: #e6e0ee;
-  --pm-accent: #5b03b8;          /* purple */
-  --pm-accent-soft: #ece1ff;
-  --pm-lime: #bddc7b;            /* yellow-green */
-  --pm-lime-soft: #e8f3cf;
-  --pm-asset-green: #add869;     /* green ring used in the illustration assets */
-  --pm-pink: #f04893;            /* french pink */
-  --pm-pink-soft: #fde0ec;
+  --pm-bg-alt: #f1f5f9;          /* soft neutral tint, alt section bg */
+  --pm-ink: #050816;             /* near-black, primary text */
+  --pm-ink-soft: #0a192f;        /* azul medianoche */
+  --pm-muted: #64748b;
+  --pm-line: #e2e8f0;            /* neutral, soft borders */
+  --pm-accent: #0f2a54;          /* azul más rico, usado en acentos, títulos y footer */
+  --pm-accent-soft: #dce4ee;
+  --pm-green-soft: #d1fae5;
+  --pm-asset-green: #059669;     /* verde sabio oscuro */
+  --pm-pink: #e11d48;            /* fucsia magenta */
+  --pm-pink-soft: #ffe4e6;
   --pm-radius: 18px;
-  --pm-shadow: 0 8px 28px rgba(33, 13, 66, 0.10);
+  --pm-shadow: 0 8px 28px rgba(5, 8, 22, 0.12);
 }
 
 /* ============ Base ============ */
@@ -38,7 +37,7 @@ body {
 h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
   font-family: 'Space Grotesk', 'Inter', sans-serif;
   letter-spacing: -0.01em;
-  color: var(--pm-ink);
+  color: var(--pm-accent);
 }
 
 .pm-h1 {
@@ -107,7 +106,7 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 
 .pm-nav .nav-link:hover,
 .pm-nav .nav-link:focus {
-  color: var(--pm-accent);
+  color: var(--pm-pink);
 }
 
 .pm-lang-btn {
@@ -123,6 +122,27 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 
 .pm-lang-btn:hover {
   background: var(--pm-ink);
+  color: #fff;
+}
+
+.pm-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--pm-accent);
+  background: transparent;
+  color: var(--pm-accent);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.25rem 0.85rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pm-cv-btn:hover {
+  background: var(--pm-accent);
   color: #fff;
 }
 
@@ -170,7 +190,7 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
   left: -6%;
   width: 480px;
   height: 480px;
-  background: radial-gradient(circle, var(--pm-lime-soft) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--pm-green-soft) 0%, transparent 70%);
 }
 
 .pm-hero .container {
@@ -201,18 +221,18 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 
 /* ============ Buttons ============ */
 .pm-btn-primary {
-  background: var(--pm-ink);
+  background: var(--pm-accent);
   color: #fff;
   font-weight: 600;
   border-radius: 999px;
   padding: 0.75rem 1.5rem;
-  border: 1px solid var(--pm-ink);
+  border: 1px solid var(--pm-accent);
   transition: transform 0.15s ease, background 0.2s ease;
 }
 
 .pm-btn-primary:hover {
-  background: var(--pm-accent);
-  border-color: var(--pm-accent);
+  background: var(--pm-pink);
+  border-color: var(--pm-pink);
   color: #fff;
   transform: translateY(-1px);
 }
@@ -227,7 +247,30 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 }
 
 .pm-btn-ghost:hover {
-  background: var(--pm-ink);
+  background: var(--pm-accent);
+  border-color: var(--pm-accent);
+  color: #fff;
+}
+
+.pm-case-card-btn {
+  color: var(--pm-accent);
+  border-color: var(--pm-accent);
+}
+
+.pm-case-card-btn:hover {
+  background: var(--pm-pink);
+  border-color: var(--pm-pink);
+  color: #fff;
+}
+
+.modal-footer .pm-btn-ghost {
+  color: var(--pm-pink);
+  border-color: var(--pm-pink);
+}
+
+.modal-footer .pm-btn-ghost:hover {
+  background: var(--pm-accent);
+  border-color: var(--pm-accent);
   color: #fff;
 }
 
@@ -306,8 +349,8 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: var(--pm-accent-soft);
-  color: var(--pm-accent);
+  background: var(--pm-green-soft);
+  color: var(--pm-asset-green);
   display: grid;
   place-items: center;
   font-size: 1.2rem;
@@ -411,10 +454,10 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 .pm-timeline::before {
   content: "";
   position: absolute;
-  left: 11px;
+  left: 10.75px;
   top: 0;
   bottom: 0;
-  width: 2px;
+  width: 2.5px;
   background: var(--pm-asset-green);
 }
 
@@ -435,8 +478,8 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: var(--pm-pink);
-  border: 5px solid var(--pm-asset-green);
+  background: var(--pm-accent);
+  border: 2.5px solid var(--pm-asset-green);
   z-index: 1;
 }
 
@@ -467,7 +510,7 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 .pm-timeline-date {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--pm-accent);
+  color: var(--pm-asset-green);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -854,43 +897,6 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
   }
 }
 
-/* ============ Skills with levels ============ */
-.pm-skill {
-  margin-bottom: 1.25rem;
-}
-
-.pm-skill-head {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.4rem;
-  font-weight: 500;
-  font-size: 0.95rem;
-  color: var(--pm-ink);
-}
-
-.pm-skill-level {
-  color: var(--pm-pink);
-  font-weight: 600;
-  font-size: 0.85rem;
-}
-
-.pm-skill-bar {
-  width: 100%;
-  height: 8px;
-  background: var(--pm-bg-alt);
-  border-radius: 999px;
-  overflow: hidden;
-  border: 1px solid var(--pm-line);
-}
-
-.pm-skill-fill {
-  width: 0;
-  height: 100%;
-  background: linear-gradient(90deg, var(--pm-pink), var(--pm-accent));
-  border-radius: 999px;
-  transition: width 1.1s cubic-bezier(0.22, 0.9, 0.32, 1);
-}
-
 /* ============ Courses ============ */
 .pm-course {
   background: #fff;
@@ -910,8 +916,8 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  background: var(--pm-accent-soft);
-  color: var(--pm-accent);
+  background: var(--pm-green-soft);
+  color: var(--pm-asset-green);
   display: grid;
   place-items: center;
   font-size: 1.4rem;
@@ -992,6 +998,43 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 }
 
 /* ============ Contact ============ */
+#contact {
+  position: relative;
+  overflow: hidden;
+}
+
+#contact .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pm-contact-illustration-col {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    left: auto;
+    width: auto;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .pm-contact-illustration {
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .pm-contact-illustration-col {
+    margin-top: 1.5rem;
+  }
+
+  .pm-contact-illustration {
+    max-width: 140px;
+    margin: 0 auto;
+  }
+}
+
 .pm-form .form-label {
   font-weight: 600;
   color: var(--pm-ink);
@@ -1007,8 +1050,23 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 }
 
 .pm-form .form-control:focus {
-  border-color: var(--pm-accent);
-  box-shadow: 0 0 0 3px var(--pm-accent-soft);
+  border-color: var(--pm-pink);
+  box-shadow: 0 0 0 3px var(--pm-pink-soft);
+}
+
+.pm-form-status {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: right;
+  min-height: 1.2em;
+}
+
+.pm-form-status.is-success {
+  color: var(--pm-asset-green);
+}
+
+.pm-form-status.is-error {
+  color: var(--pm-pink);
 }
 
 .pm-links {
@@ -1019,7 +1077,7 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 }
 
 .pm-links a {
-  color: var(--pm-ink);
+  color: var(--pm-accent);
   width: 48px;
   height: 48px;
   display: grid;
@@ -1031,14 +1089,14 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
 }
 
 .pm-links a:hover {
-  background: var(--pm-accent);
+  background: var(--pm-pink);
   color: #fff;
-  border-color: var(--pm-accent);
+  border-color: var(--pm-pink);
 }
 
 /* ============ Footer ============ */
 .pm-footer {
-  background: var(--pm-ink);
+  background: var(--pm-accent);
   color: #fff;
   padding: 2.5rem 0;
   margin-top: 0;
@@ -1075,10 +1133,6 @@ h1, h2, h3, .pm-h1, .pm-h2, .pm-h3 {
   .pm-reveal-fade {
     opacity: 1;
     transform: none;
-    transition: none;
-  }
-
-  .pm-skill-fill {
     transition: none;
   }
 }

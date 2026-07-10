@@ -9,12 +9,14 @@
 
     "nav.about": "Sobre mí",
     "nav.what": "Qué hago",
-    "nav.timeline": "Recorrido",
+    "nav.careerPath": "Trayectoria",
     "nav.projects": "Proyectos",
     "nav.experience": "Experiencia",
     "nav.courses": "Cursos",
     "nav.testimonials": "Testimonios",
     "nav.contact": "Contacto",
+    "nav.cv": "CV",
+    "nav.cvAria": "Descargar CV",
 
     "hero.eyebrow": "Product Manager · Food-tech · Growth",
     "hero.hi": "Hola, soy",
@@ -49,6 +51,8 @@
     "what.do9": "Live Ops (e-commerce)",
     "what.do10": "Expertise de dominio en food-tech",
     "what.useTitle": "Habilidades",
+    "skills.coreTitle": "Habilidades core",
+    "skills.workingTitle": "Conocimientos generales",
     "what.toolsTitle": "Herramientas",
     "what.expectTitle": "Qué podés esperar",
     "what.exp1": "Mentalidad de fundadora en cada iniciativa",
@@ -82,7 +86,7 @@
     "timeline.label.role": "Rol:",
     "timeline.label.keyWins": "Logros clave:",
     "timeline.t1.date": "2024 – Presente",
-    "timeline.t1.title": "CookUnity — Product Marketing Associate & Menu Merchandiser",
+    "timeline.t1.title": "CookUnity — Product Associate, Menu Merchandiser",
     "timeline.t1.challenge": "Aumentar el discovery de comidas para impulsar la adopción de producto, el engagement y la retención de largo plazo.",
     "timeline.t1.role": "Fui dueña de la experiencia de discovery a través del merchandising de la homepage, colecciones de producto, labels, líneas de producto y lanzamientos GTM, en conjunto con los equipos de Producto, Diseño, CRM, Supply y Chefs.",
     "timeline.t1.result1": "Aumenté la exposición de SKU Expansion del 14,65% al 16,1%",
@@ -365,7 +369,8 @@
       const saved = localStorage.getItem('pm.lang');
       if (saved === 'en' || saved === 'es') return saved;
     } catch (_) {}
-    return (navigator.language || 'en').toLowerCase().startsWith('es') ? 'es' : 'en';
+    // Always default to English unless the visitor has explicitly toggled to Spanish before.
+    return 'en';
   }
 
   document.addEventListener('DOMContentLoaded', () => {
